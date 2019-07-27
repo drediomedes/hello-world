@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js" data-auto-replace-svg="nest"></script>
+  <link rel="stylesheet" href="">
+  <<style type="text/css" media="screen">
+   ul{
+     margin-left:45%;
+    }
+  </style>
+</head>
+<body style="background-color: firebrick">
+  <header style="position: absolute; background-color: darkred; width: 100%;top: 0; text-align: center;">
+<h1 class="display-2" style="color: gold; font-family: broadway flat">CINEMA</h1>
+
+</header>
+<div class="col-sm">
+    <a href="cadastro de filmes.html"><button type="button" class="btn btn-primary btn-lg" style="background-color: gold; border-color: gold; float: right"> ADD FILME  <i class="fas fa-plus"></i></button></a>
+  </div>
+  <div class="container">
+
+  <div class="row">
+   
+    <div class="col-sm">
+    <table class="table" style="margin-top: 20%; font-size: 140%;">
+  <thead class="thead-dark">
+    <tr>
+     
+      <th scope="col">Em Cartaz</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Remover</th>
+      <th scope="col">Visualizar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td id="prime"></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-edit" style="font-size: 3em"></i></button></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-trash-alt" style="font-size: 3em"></i></button></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-eye" style="font-size: 3em"></i></button></td>
+    </tr>
+
+    
+    
+    <tr>
+      
+      <td id="sec"></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-edit" style="font-size: 3em"></i></button></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-trash-alt" style="font-size: 3em"></i></button></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-eye" style="font-size: 3em"></i></button></td>
+    </tr>
+
+    
+    </tr>
+    <tr>
+      
+      <td id="terc"></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-edit" style="font-size: 3em"></i></button></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-trash-alt" style="font-size: 3em"></i></button></td>
+      <td><button type="button" class="btn btn-outline-warning"><i class="fas fa-eye" style="font-size: 3em"></i></button></td>
+    </tr>
+
+    
+  
+  </tbody>
+</table>
+
+<nav aria-label="...">
+  <ul class="pagination pagination-sm">
+    <li class="page-item active" aria-current="page">
+      <span class="page-link">
+        1
+        <span class="sr-only">(current)</span>
+      </span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</nav>
+    </div>
+
+  
+</div>
+
+
+
+<script>
+var primeiro = '{"titulo":"Homem-Aranha:Longe de casa"}';
+var filme1 = JSON.parse(primeiro);
+document.getElementById("prime").innerHTML = filme1.titulo;
+
+var segundo = '{"titulo":"Rei Leão"}';
+var filme2 = JSON.parse(segundo);
+document.getElementById("sec").innerHTML = filme2.titulo;
+
+var terceiro = '{"titulo":"Toy Story 4"}';
+var filme3 = JSON.parse(terceiro);
+document.getElementById("terc").innerHTML = filme3.titulo;
+
+
+</script>
+
+</body>
+</html>
